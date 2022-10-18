@@ -1,4 +1,4 @@
-import nodo from Nodo
+from nodo import Nodo
 class Arbol:
   #Constructor
   def__init__(self,dato):
@@ -45,3 +45,13 @@ def inorden(self,dato):
   print("Recorrido In Orden del árbol: ")
   self.__inorden(self.raiz,dato)
   print(" ")  
+def preorden(self,dato):
+  print("Recorrido Pre Orden del árbol: ")
+  self.__preorden(self.raiz,dato)
+  print(" ")  
+def postorden(self,dato):
+  print("Recorrido Post Orden del árbol: ")
+  self.__postorden(self.raiz,dato)
+  print(" ")  
+def busqueda_avara(self, busqueda):
+  print("Busqueda")
