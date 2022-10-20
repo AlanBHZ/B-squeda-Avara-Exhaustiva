@@ -1,14 +1,14 @@
 from grafo import Grafo
-from arista import Arista
+from arista import Arista, AristaNoDirigida
 from nodo_grafo import Nodo_grafo
 
-x = Nodo_grafo(('X'))
-a = Nodo_grafo(('A'))
-b = Nodo_grafo(('B'))
-c = Nodo_grafo(('C'))
-d = Nodo_grafo(('D'))
-f = Nodo_grafo(('F'))
-z = Nodo_grafo(('Z'))
+x = Nodo_grafo('X')
+a = Nodo_grafo('A')
+b = Nodo_grafo('B')
+c = Nodo_grafo('C')
+d = Nodo_grafo('D')
+f = Nodo_grafo('F')
+z = Nodo_grafo('Z')
 
 arista = [Arista(x, a, 3),
 Arista(x, b, 2),
@@ -26,3 +26,4 @@ for i in arista:
     g.agregar_arista(i)
 
 print(g)
+print(g.get_lista_ady())
