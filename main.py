@@ -10,20 +10,20 @@ d = Nodo_grafo('D')
 f = Nodo_grafo('F')
 z = Nodo_grafo('Z')
 
-arista = [Arista(x, a, 3),
-Arista(x, b, 2),
-Arista(a, b, 4),
-Arista(a, c, 2),
-Arista(b, d, 3),
-Arista(c, d, 4),
-Arista(c, f, 4),
-Arista(c, z, 5),
-Arista(d, f, 3),
-Arista(f, z, 2)]
+arista = [AristaNoDirigida(x, a, 3),
+AristaNoDirigida(x, b, 2),
+AristaNoDirigida(a, b, 4),
+AristaNoDirigida(a, c, 2),
+AristaNoDirigida(b, d, 3),
+AristaNoDirigida(c, d, 4),
+AristaNoDirigida(c, f, 4),
+AristaNoDirigida(c, z, 5),
+AristaNoDirigida(d, f, 3),
+AristaNoDirigida(f, z, 2)]
 
 g = Grafo()
 for i in arista:
     g.agregar_arista(i)
 
 print(g)
-print(g.get_lista_ady())
+g.print_ady()

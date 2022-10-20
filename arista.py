@@ -22,6 +22,9 @@ class Arista:
             return True
         else:
             return False
+    @property
+    def peso(self):
+        return self.__peso      
 class AristaNoDirigida(Arista):
     def __init__(self, n1: Nodo_grafo, n2: Nodo_grafo, peso):
         super().__init__(n1, n2, peso)
@@ -32,6 +35,6 @@ class AristaNoDirigida(Arista):
     def get_nodo2(self)->Nodo_grafo:
         return self.get_par()[1]
     def __str__(self) -> str:
-        return f"({self.get_nodo1()} ----- {self.__peso} -----> {self.get_nodo2()}))"
-        
+        return f"({self.get_nodo1()} ----- {self.peso} -----> {self.get_nodo2()}))"
+
 #https://www6.uniovi.es/usr/cesar/Uned/EDA/Apuntes/TAD_apUM_07.pdf
