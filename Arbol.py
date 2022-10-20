@@ -1,7 +1,7 @@
 from nodo import Nodo
 class Arbol:
   #Constructor
-  def__init__(self,dato):
+  def __init__(self,dato):
     self.raiz = Nodo(dato)
   ###########Funciones privadas###########
   #Agregar un nodo al árbol
