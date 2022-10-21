@@ -5,7 +5,7 @@ from nodo_grafo import Nodo_grafo
 class Grafo:
     def __init__(self):
         self.__aristas = []
-        self.__ady = dict() # {}
+        self.__ady = dict()
 
     def agregar_arista(self, arista: Arista):
         if arista not in self.__aristas:

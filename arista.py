@@ -37,4 +37,3 @@ class AristaNoDirigida(Arista):
     def __str__(self) -> str:
         return f"({self.get_nodo1()} ----- {self.peso} -----> {self.get_nodo2()}))"
 
-#https://www6.uniovi.es/usr/cesar/Uned/EDA/Apuntes/TAD_apUM_07.pdf
